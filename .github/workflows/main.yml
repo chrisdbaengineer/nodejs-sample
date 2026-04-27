@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main]
     types: [opened, synchronize, reopened]
-
+    
 jobs:
   test:
     name: Run Node.js Tests
