@@ -20,7 +20,7 @@ metadata:
   namespace: todoapp
 data:
   NODE_ENV: "production"
-  ALLOWED_ORIGINS: "https://yourdomain.com"
+  ALLOWED_ORIGINS: "http://localhost"
   POSTGRES_HOST: "todoapp-postgres"
   POSTGRES_PORT: "5432"
   POSTGRES_DB: "todoapp"
@@ -175,7 +175,7 @@ spec:
         fsGroup: 1001
       containers:
         - name: todoapp
-          image: ghcr.io/your-username/docker-nodejs-sample:latest
+          image: ghcr.io/chrisdbaengineer/nodejs-sample:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
@@ -282,7 +282,7 @@ spec:
         - yourdomain.com
       secretName: todoapp-tls
   rules:
-    - host: yourdomain.com
+    - host: localhost
       http:
         paths:
           - path: /
