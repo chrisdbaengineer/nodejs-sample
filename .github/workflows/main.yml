@@ -1,4 +1,4 @@
-name: CI/CD â Node.js Application with Docker
+name: CICD a NodeJs application with Docker
 
 on:
   push:
