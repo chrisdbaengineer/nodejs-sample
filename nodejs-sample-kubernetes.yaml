@@ -218,7 +218,7 @@ spec:
                   name: todoapp-secrets
                   key: postgres-password
             - name: VITE_CACHE_DIR
-              value: /tmp/.vite-temp
+              value: "/tmp/.vite-temp"
           livenessProbe:
             httpGet:
               path: /health
